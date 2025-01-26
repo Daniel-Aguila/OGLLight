@@ -1,0 +1,15 @@
+# Build files
+/build/
+*.o
+*.out
+*.exe
+
+# IDE configurations
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,4 @@
+C:/MyCode/OGLLight/cmake-build-debug/CMakeFiles/glad.dir
+C:/MyCode/OGLLight/cmake-build-debug/CMakeFiles/OGLLight.dir
+C:/MyCode/OGLLight/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/MyCode/OGLLight/cmake-build-debug/CMakeFiles/rebuild_cache.dir
