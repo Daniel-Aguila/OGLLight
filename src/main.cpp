@@ -6,6 +6,14 @@
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 
+//triangle (x,y,z)
+//[-1.0,1.0]
+float vertices[] ={
+    -0.5f,-0.5f,0.0f,
+    0.5f,-0.5f,0.0f,
+    00.f,0.5f,0.0f,
+};
+
 int main() {
 
     //specify configuration for OpenGL
@@ -21,6 +29,16 @@ int main() {
         glfwTerminate();
         return -1;
     }
+
+    //store data into GPU
+    //Vertex Buffer Objects(VBO)
+    unsigned int VBO;
+    glGenBuffers(1,&VBO); //Generate one buffer id and have VBO reference it
+    glBindBuffer(GL_ARRAY_BUFFER,VBO); //bind several buffers at once as long as they have diff buffer type.
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW); //copies the previously defined vertex data inside the  buffer memory
+    //(Type of buffer we want to copy data into, size of the data in bytes, data we want to send, how gpu manages the data)
+
+
 
     glfwMakeContextCurrent(window);
 
