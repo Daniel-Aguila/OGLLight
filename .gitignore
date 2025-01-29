@@ -1,15 +1,26 @@
-# Build files
+# CMake Build Artifacts
 /build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Debug & Release Builds
+Debug/
+Release/
+
+# Visual Studio Specific
+*.vcxproj*
+*.sln
+
+# Clang & GCC Compilation Files
 *.o
+*.obj
+*.pdb
+*.ilk
 *.out
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
 *.exe
-
-# IDE configurations
-.idea/
-*.iml
-.vscode/
-*.code-workspace
-
-# System files
-.DS_Store
-Thumbs.db
